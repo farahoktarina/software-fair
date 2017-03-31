@@ -15,18 +15,18 @@ class Administrator extends CI_Controller {
 	public function index()
 	{
 		 $logged_in = $this->session->userdata('logged_in');
-    
-    
+
+
             if (!$logged_in)
             {
-                redirect(site_url('welcome2'));
-                
+                $this->load->view('admins/login_admin');
+
             }else
             {
 		$this->load->view('Admins/index');
 			}
 	}
-	
+
 
 	public function login_adm()
 		{
@@ -35,16 +35,16 @@ class Administrator extends CI_Controller {
 			$temp_account 	= $this->model_admin->check_user_account($email_adm, $password_adm)->row();
 
 			$this->load->library('form_validation');
-			
-		
-			$this->form_validation->set_rules('email_adm', 'email_adm', 'required'); 
-			$this->form_validation->set_rules('password_adm', 'password_adm', 'required'); 
+
+
+			$this->form_validation->set_rules('email_adm', 'email_adm', 'required');
+			$this->form_validation->set_rules('password_adm', 'password_adm', 'required');
 
 			$num_account 		= count($temp_account);
 			$num_email_adm		= count($email_adm);
 			$num_password_adm	= count($password_adm);
-			
-			
+
+
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->session->set_flashdata('Konfirmasi','Maaf isi dahulu');
@@ -58,10 +58,10 @@ class Administrator extends CI_Controller {
 						'id_adm' 		=> $temp_account->id_adm,
 						'email_adm'		=> $temp_account->email_adm,
 						'password_adm' 	=> $temp_account->password_adm,
-					
+
 						'logged_in' => true
 					);
-					
+
 					$this->session->set_userdata($array_items);
 					redirect(site_url('Administrator/index'));
 
@@ -72,8 +72,8 @@ class Administrator extends CI_Controller {
 					redirect(site_url('welcome2'));
 				}
 
-			}	
-			
+			}
+
 		}
 
 		public function logout()

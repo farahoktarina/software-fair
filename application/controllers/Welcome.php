@@ -5,6 +5,6 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('developers/login_developer');
+		$this->load->view('index');
 	}
 }

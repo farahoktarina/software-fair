@@ -106,14 +106,22 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <small>Developer</small>
+                            Give Points
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-dashboard"></i> Dashboard
+                                <i class="fa fa-edit"></i> Points
                             </li>
                         </ol>
-                        <h2>Your Saldo <span class="label label-default">3000</span></h2>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3>Input PIN Peserta</h3>
+                      <div class="form-group">
+                        <input type="text" name="pin" class="form-control" placeholder="PIN" />
+                      </div>
+                      <div class="text-center">
+                        <input type="submit" name="Submit" value="Check" class="btn btn-lg btn-block btn-info">
+                      </div>
                     </div>
                 </div>
 

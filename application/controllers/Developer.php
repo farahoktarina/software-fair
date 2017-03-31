@@ -14,21 +14,22 @@ class Developer extends CI_Controller {
 
 	public function index()
 	{
-		 $logged_in = $this->session->userdata('logged_in');
-    
-    
-            if (!$logged_in)
-            {
-                redirect(site_url('welcome'));
-                
-            }else
-            {
+		//  $logged_in = $this->session->userdata('logged_in');
+		//
+		//
+    //         if (!$logged_in)
+    //         {
+    //             $this->load->view('developers/login_developer');
+		//
+    //         }else
+    //         {
+		// $this->load->view('developers/index');
+		// 	}
 		$this->load->view('developers/index');
-			}
 	}
-	
-	public function charts(){
-		$this->load->view('developers/charts');
+
+	public function point(){
+		$this->load->view('developers/point');
 	}
 
 	public function login_dev()
@@ -38,16 +39,16 @@ class Developer extends CI_Controller {
 			$temp_account 	= $this->model_developer->check_user_account($email_dev, $password_dev)->row();
 
 			$this->load->library('form_validation');
-			
-		
-			$this->form_validation->set_rules('email_dev', 'email_dev', 'required'); 
-			$this->form_validation->set_rules('password_dev', 'password_dev', 'required'); 
+
+
+			$this->form_validation->set_rules('email_dev', 'email_dev', 'required');
+			$this->form_validation->set_rules('password_dev', 'password_dev', 'required');
 
 			$num_account 		= count($temp_account);
 			$num_email_dev		= count($email_dev);
 			$num_password_dev	= count($password_dev);
-			
-			
+
+
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->session->set_flashdata('Konfirmasi','Maaf isi dahulu');
@@ -72,7 +73,7 @@ class Developer extends CI_Controller {
 
 						'logged_in' => true
 					);
-					
+
 					$this->session->set_userdata($array_items);
 					redirect(site_url('Developer/index'));
 
@@ -85,8 +86,8 @@ class Developer extends CI_Controller {
 
 			}
 
-			
-			
+
+
 		}
 
 		public function logout()
