@@ -52,7 +52,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
 				<div class="team-wrapper">
-					<img src="images/team1.jpg" class="img-responsive" alt="team img">
+					<img src="assets/images/team1.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Cindy</h4>
 							<h3>Senior Designer</h3>
@@ -67,7 +67,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
 				<div class="team-wrapper">
-					<img src="images/team2.jpg" class="img-responsive" alt="team img">
+					<img src="assets/images/team2.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Mary</h4>
 							<h3>Core Developer</h3>
@@ -82,7 +82,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
-					<img src="images/team3.jpg" class="img-responsive" alt="team img">
+					<img src="assets/images/team3.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Linda</h4>
 							<h3>Manager</h3>
@@ -97,7 +97,7 @@
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
-					<img src="images/team4.jpg" class="img-responsive" alt="team img">
+					<img src="assets/images/team4.jpg" class="img-responsive" alt="team img">
 						<div class="team-des">
 							<h4>Sandar</h4>
 							<h3>Accountant</h3>
@@ -129,27 +129,27 @@
                			<div class="iso-box-wrapper col4-iso-box">
 
                				 <div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img1.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img2.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img3.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img4.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img4.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img5.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img6.jpg" alt="portfolio img"></a>
+               				 	<a href="assets/images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="assets/images/portfolio-img6.jpg" alt="portfolio img"></a>
                				 </div>
 
                			</div>
