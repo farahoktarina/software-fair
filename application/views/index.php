@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php include_once('layouts/master.php') ?>
+	<?php include('layouts/master.php') ?>
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-<?php include_once('layouts/navigation.php') ?>
+<?php include('layouts/navigation.php') ?>
 <!-- work section -->
 <section id="work">
 	<div class="container">
