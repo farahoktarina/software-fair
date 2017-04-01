@@ -15,26 +15,27 @@
 					<hr>
 				</div>
 			</div>
-			<div class="col-md-8 col-sm-10 col-md-offset-2" style="text-align:justify">
-				<p>Software Fair adalah fafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			<div class="col-md-8 col-sm-10 col-md-offset-2" style="text-align:center">
+				<p>SF adalah ajang pameran perangkat lunak / software yang merupakan hasil developer mahasiswa udinus fakultas ilmu komputer terhadap dunia luar. Sebagai penjembatan mahasiswa dengan perusahaan atauinstansi yang di undang , untuk menciptakan kerjasama yang saling menguntungkan
+Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa kualitas software mahasiswa Universitas Dian Nuswantoro dapat bersaing dengan dunia luar</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
-				<i class="icon-presentation medium-icon"></i>
-					<h3>UP YOUR APP</h3>
+					<img src="<?php echo base_url();?>/assets/images/reward/sertifikat.png" width="60px" height="60px">
+					<h3>Sertifikat</h3>
 					<hr>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia.</p>
+					<p>Mendapatkan sertifikat sebagai salah satu tanda aplikasi layak di pamerkan</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
-				<i class="icon-gift medium-icon"></i>
-					<h3>EXCLUSIVE MERCHANDISE</h3>
+				<img src="<?php echo base_url();?>/assets/images/reward/talkshow.png" width="60px" height="60px">
+					<h3>TAKSHOW</h3>
 					<hr>
-					<p>Digital Team is free responsive Bootstrap v3.3.5 layout from <a rel="nofollow" href="http://www.tooplate.com" target="_parent">Tooplate</a>. Images are from <a rel="nofollow" href="http://pixabay.com" target="_parent">Pixabay</a> free photo website.</p>
+					<p>Sebagai ilmu pengetahuan bagi developer untuk start up / mengembangkan software ke dunia luar</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
-				<i class="icon-trophy medium-icon"></i>
-					<h3>REWARD</h3>
+					<img src="<?php echo base_url();?>/assets/images/reward/haki.png" width="60px" height="60px">
+					<h3>Haki Reward</h3>
 					<hr>
-					<p>You can edit and use this template for your websites. Please tell your friends about Tooplate. Thank you for visiting our website.</p>
+					<p>Sebagai perlindungan kekayaan aplikasi developer</p>
 			</div>
 		</div>
 	</div>
