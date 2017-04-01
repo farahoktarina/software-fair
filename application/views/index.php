@@ -42,7 +42,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 </section>
 
 <!-- team section -->
-<section id="team" style="background-color: #3B3B3B;">
+<section id="team" style="background-color: #F9062E;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -53,14 +53,14 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
 				<div class="team-wrapper">
-					<img src="<?php echo base_url();?>/assets/images/mobile.png" class="img-responsive" alt="mobile">
+					<img src="<?php echo base_url();?>/assets/images/mobilefix.png" class="img-responsive" alt="mobile">
 						<div class="team-des">
 						</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
 				<div class="team-wrapper">
-					<img src="<?php echo base_url();?>/assets/images/web.png" class="img-responsive" alt="web">
+					<img src="<?php echo base_url();?>/assets/images/webfix.png" class="img-responsive" alt="web">
 						<!-- <div class="team-des">
 							<h4>Mary</h4>
 							<h3>Core Developer</h3>
@@ -75,26 +75,17 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
-					<img src="<?php echo base_url();?>/assets/images/desktop.png" class="img-responsive" alt="dekstop">
+					<img src="<?php echo base_url();?>/assets/images/desktopfix.png" class="img-responsive" alt="dekstop">
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
-					<img src="<?php echo base_url();?>/assets/images/game.png" class="img-responsive" alt="game">
-						<div class="team-des">
-							<h4>Sandar</h4>
-							<h3>Accountant</h3>
-							<hr>
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-							</ul>
-						</div>
+					<img src="<?php echo base_url();?>/assets/images/gamefix.png" class="img-responsive" alt="game" width="300px" height="300px">
+
 				</div>
 			</div>
 		</div>
-	</div>
+	</divq>
 </section>
 
 <!-- portfolio section -->
