@@ -110,35 +110,21 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-edit"></i> Give Points
+                                <i class="fa fa-edit"></i> Points
                             </li>
                         </ol>
                     </div>
-                    <?php foreach ($peserta as $key){?>
                     <div class="col-lg-6">
-
-                        <h4>PIN </h4>
-                        <h3><?php echo $key['pin'] ?></h3>
-                        <h4>Nama Peserta</h4>
-                        <h3><?php echo $key['nama_pes'] ?></h3>
-
-                    </div>
-                    <div class="col-lg-4 col-offset-lg-1">
-                      <h3>Give Points</h3>
-                      <form class="" action="<?php echo base_url('developer/give_point/'.$key['pin']);?>" method="post">
+                      <h3>Input PIN Peserta</h3>
+                      <form class="" action="<?php echo base_url('developer/check_pin');?>" method="post">
                         <div class="form-group">
-                          <select class="form-control" name="point">
-                            <option disabled selected>Points</option>
-                            <option name="point" value="hard">60</option>
-                            <option name="point" value="normal">40</option>
-                          </select>
-                       </div>
+                          <input type="text" name="pin" class="form-control" placeholder="PIN" />
+                        </div>
                         <div class="text-center">
-                          <input type="submit" name="Submit" value="Give Points" class="btn btn-lg btn-block btn-info">
+                          <input type="submit" name="Submit" value="Check" class="btn btn-lg btn-block btn-info">
                         </div>
                       </form>
                     </div>
-                    <?php }?>
                 </div>
 
                 <!-- /.row -->

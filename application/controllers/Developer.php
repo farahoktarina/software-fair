@@ -8,6 +8,7 @@ class Developer extends CI_Controller {
 		{
 			parent::__construct();
 			$this->load->model('model_developer');
+			$this->load->model('mymodel');
 			$this->load->helper('url');
 			$this->load->helper('form');
 		}
@@ -25,11 +26,54 @@ class Developer extends CI_Controller {
     //         {
 		// $this->load->view('developers/index');
 		// 	}
-		$this->load->view('developers/index');
+		$data['dev'] = $this->mymodel->getData('developer');
+		$this->template->load('developers/index','developers/index',$data);
+		// $this->load->view('developers/index');
 	}
 
-	public function point(){
-		$this->load->view('developers/point');
+	public function check(){
+		$this->load->view('developers/check');
+	}
+	public function check_pin(){
+
+		$pin=$this->input->post('pin');
+		$where = "where pin = '".$pin."'";
+		$data = $this->mymodel->getDataWhere('peserta',$where);
+		$count=count($data);
+		if($count>0){
+
+			redirect('developer/point/'.$pin);
+		}
+		else{
+			redirect('developer/check');
+		}
+	}
+
+	public function point($pin){
+		$where = "where pin = '".$pin."'";
+		$data ['peserta']= $this->mymodel->getDataWhere('peserta',$where);
+		$this->template->load('developers/point','developers/point',$data);
+		// $this->load->view('developers/point');
+	}
+
+	public function give_point($pin){
+		$point=$this->input->post('point');
+		if($point=='normal'){
+			$score=40;
+		}
+		else{
+			$score=60;
+		}
+		$where = "where pin = '".$pin."'";
+		$peserta= $this->mymodel->getDataWhere('peserta',$where);
+		$now=$peserta->score;
+		$now=$now+$score;
+		$data=array(
+			'score'=>$now
+		);
+		$where2=array('pin'=>$pin);
+		$this->mymodel->update('peserta',$data,$where2);
+		redirect('/developer');
 	}
 
 	public function login_dev()

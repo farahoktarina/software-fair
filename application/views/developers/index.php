@@ -73,10 +73,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="developer"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="<?php echo base_url('/developer');?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="developer/point"><i class="fa fa-fw fa-edit"></i> Give Points</a>
+                        <a href="<?php echo base_url('/developer/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Result</a>
@@ -113,7 +113,9 @@
                                 <i class="fa fa-dashboard"></i> Dashboard
                             </li>
                         </ol>
-                        <h2>Your Saldo <span class="label label-default">3000</span></h2>
+                        <?php foreach ($dev as $key){?>
+                        <h2>Your Saldo <span class="label label-default"><?php echo $key['saldo'] ?></span></h2>
+                         <?php }?>
                     </div>
                 </div>
 
