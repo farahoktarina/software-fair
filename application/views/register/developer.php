@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Register Peserta</title>
+    <title>Register Developer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -100,12 +100,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h2 style="text-align:center;margin-bottom:20px; margin-top:-50px">REGISTRASI GAMIFICATION</h2>
+            <h2 style="text-align:center;margin-bottom:20px; margin-top:-50px">REGISTRASI DEVELOPER</h2>
             <form class="" action="<?php echo base_url('register/storeP');?>" method="post">
               <input type="hidden" name="_token" value=" csrf_token() ">
                 <div class="form-group">
-                  <input type="text" name="pin" class="form-control" value="<?php echo substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz",3)),0,5)?>"
-                  readonly="true" style="font-size:24px">
+                  <input type="text" name="nim" class="form-control" placeholder="NIM" />
                 </div>
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" />
@@ -113,10 +112,23 @@
                 <div class="form-group">
                    <input type="email" class="form-control" name="email" placeholder="Email"/>
                 </div>
-                <div class="form-group" style="text-align:center">
-                  <label for="kategori" style="font-size:16px"><strong>Kategori</strong></label><br>
-                  <input type="radio" name="kategori" value="mhs" > Mahasiswa
-                  <input type="radio" name="kategori" value="umum" style="margin-left:20px"> Umum
+                <div class="form-group">
+                  <input type="tel" name="telp" class="form-control" placeholder="Phone Number" />
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="sel1">
+                    <option>Select Type App</option>
+                    <option>Mobile App</option>
+                    <option>Web App</option>
+                    <option>Dekstop App</option>
+                    <option>Game App</option>
+                  </select>
+               </div>
+               <div class="form-group">
+                 <input type="text" name="name-app" class="form-control" placeholder="Name of Your App" />
+               </div>
+               <div class="form-group">
+                 <textarea name="dekripsi" rows="8" cols="75" placeholder="Description of Your App"></textarea>
                </div>
                  <div class="text-center">
                    <input type="submit" name="Submit" value="Daftar" class="btn btn-lg btn-block btn-info">

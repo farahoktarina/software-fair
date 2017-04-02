@@ -42,7 +42,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 </section>
 
 <!-- team section -->
-<section id="team" style="background-color: #F9062E;">
+<section id="team" style="background-color: #3B3B3B;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -55,33 +55,32 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 				<div class="team-wrapper">
 					<img src="<?php echo base_url();?>/assets/images/mobilefix.png" class="img-responsive" alt="mobile">
 						<div class="team-des">
+							<h4>Mobile Gallery</h4>
 						</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
 				<div class="team-wrapper">
 					<img src="<?php echo base_url();?>/assets/images/webfix.png" class="img-responsive" alt="web">
-						<!-- <div class="team-des">
-							<h4>Mary</h4>
-							<h3>Core Developer</h3>
-							<hr>
-							<ul class="social-icon">
-								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
-							</ul>
-						</div>-->
+					<div class="team-des">
+						<h4>Web Gallery</h4>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
 					<img src="<?php echo base_url();?>/assets/images/desktopfix.png" class="img-responsive" alt="dekstop">
+					<div class="team-des">
+						<h4>Dekstop Gallery</h4>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
 				<div class="team-wrapper">
-					<img src="<?php echo base_url();?>/assets/images/gamefix.png" class="img-responsive" alt="game" width="300px" height="300px">
-
+					<img src="<?php echo base_url();?>/assets/images/gamefix.png" class="img-responsive" alt="game" >
+					<div class="team-des">
+						<h4>Game Gallery</h4>
+					</div>
 				</div>
 			</div>
 		</div>
