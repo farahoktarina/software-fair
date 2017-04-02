@@ -235,7 +235,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 </section>
 
 <!-- contact section -->
-<section id="contact">
+<section id="contact" style="background: url('<?php echo base_url();?>/assets/images/contact-bg.jpg');background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12 text-center">
@@ -244,8 +244,8 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 					<hr>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-12 contact-info">
-				<h2 class="heading bold">CONTACT INFO</h2>
+			<div class="col-md-12 col-sm-12 contact-info text-center">
+
 				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
 				<div class="col-md-6 col-sm-4">
 					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
@@ -257,7 +257,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
+				<!-- <form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
 					<div class="col-md-6 col-sm-6">
 						<input type="text" class="form-control" placeholder="Name" name="name">
 					</div>
@@ -270,7 +270,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
 						<input type="submit" class="form-control" value="SEND MESSAGE">
 					</div>
-				</form>
+				</form> -->
 			</div>
 		</div>
 	</div>

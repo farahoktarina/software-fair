@@ -65,16 +65,16 @@
     				<span class="icon icon-bar"></span>
     				<span class="icon icon-bar"></span>
     			</button>
-    			<a href="#" class="navbar-brand">Software Fair 2017</a>
+    			<a href="#" class="navbar-brand" >Software Fair 2017</a>
     		</div>
     		<div class="collapse navbar-collapse">
     			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="#home" class="smoothScroll">HOME</a></li>
-    				<li><a href="#work" class="smoothScroll">ABOUT</a></li>
-    				<li><a href="#team" class="smoothScroll">APPS</a></li>
-    				<li><a href="#portfolio" class="smoothScroll">GALLERY</a></li>
-    				<li><a href="#pricing" class="smoothScroll">TIMELINE</a></li>
-    				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+            <li><a href="<?php echo base_url('/');?>" class="smoothScroll"><strong>HOME</strong></a></li>
+    				<li><a href="#work" class="smoothScroll"><strong>ABOUT</strong></a></li>
+    				<li><a href="#team" class="smoothScroll"><strong>APPS</strong></a></li>
+    				<li><a href="#portfolio" class="smoothScroll"><strong>GALLERY</strong></a></li>
+    				<li><a href="#pricing" class="smoothScroll"><strong>TIMELINE</strong></a></li>
+    				<li><a href="#contact" class="smoothScroll"><strong>CONTACT</strong></a></li>
     			</ul>
     		</div>
     	</div>
@@ -85,7 +85,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12 col-sm-12">
-    				<h1>SOFTWARE FAIR 2017</h1>
+    				<h1  style="color:#F9062E">SOFTWARE FAIR 2017</h1>
     				<hr>
     				<h3>Find the Art of Technology</h3>
     				<a href="#work" class="smoothScroll btn btn-default">GuideLine SF 2017</a>

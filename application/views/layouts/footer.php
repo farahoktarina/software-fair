@@ -1,8 +1,8 @@
 <!-- footer section -->
 <footer>
-	<div class="container">
+	<div class="container" >
 		<div class="row">
-			<div class="col-md-12 col-sm-12">
+			<div class="col-md-12 col-sm-12" >
 				<p>Copyright © Digital Team HTML5 Template | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
 				<hr>
 				<ul class="social-icon">

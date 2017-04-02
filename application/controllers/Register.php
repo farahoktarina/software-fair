@@ -16,10 +16,72 @@ class Register extends CI_Controller {
 	{
 		$this->load->view('register/peserta');
 	}
+
+	// method untuk menyimpan data developer
 	public function storeDev(){
 		$this->load->model('mymodel');
-		
+		// validasi inputan dari form
+		$this->form_validation->set_rules('nim','nim','required');
+		$this->form_validation->set_rules('name','name','required');
+		$this->form_validation->set_rules('email','email','required');
+		$this->form_validation->set_rules('telp','telp','required');
+		$this->form_validation->set_rules('type','type','required');
+		$this->form_validation->set_rules('name-app','name-app','required');
+		$this->form_validation->set_rules('deskripsi','deskripsi','required');
+		// mengambil value dari option select
+		if($this->form_validation->run() != false){
+			$type=$this->input->post('type');
+			switch ($type) {
+				case 'mobile':
+					$jenis='mobile';
+					break;
+				case 'web':
+					$jenis='web';
+					break;
+				case 'dekstop':
+					$jenis='dekstop';
+					break;
+				case 'game':
+					$jenis='game';
+					break;
+			}
+			$saldo=3000;
+			$voting=0;
+			$nim=$this->input->post('nim');
+			// mengecek apakah data yang di subtmit sudah ada di dayabase
+			$where = "where id_dev = '".$nim."'";
+			$data = $this->mymodel->getDataWhere('developer',$where);
+			// kondisi ketika ditemukan data yang sama di database
+			$count=count($data);
+			if($count>0){
+				// nanti dibuat halaman informasi kalau nim yang di inputkan duplikat / sudah ada di db
+				redirect('/register');
+			}
+			// jika tidak ditemukan data yang sama di database
+			else{
+				$data = array(
+					'id_dev'=> $nim,
+					'nama_dev'=> $this->input->post('name'),
+					'email_dev'=> $this->input->post('email'),
+					'hp_dev'=> $this->input->post('telp'),
+					'jenis_app'=>$jenis,
+					'nama_app'=> $this->input->post('name-app'),
+					'deskripsi_app'=> $this->input->post('deskripsi'),
+					'saldo'=> $saldo,
+					'voting'=> $voting,
+					// password gabungan dari SF2017 + nim yang diinputkan
+					'password_dev'=>md5('SF2017'.$nim)
+				);
+				$this->mymodel->insert('developer',$data);
+				redirect('/');
+			}
+		}
+		// mengembalikan validasi input yang tidak sesuai
+		else{
+			redirect('/register');
+		}
 	}
+	// method untuk menyimpan data peserta gamification
 	public function storeP(){
 		$this->load->model('mymodel');
 		$this->form_validation->set_rules('name','name','required');

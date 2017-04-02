@@ -65,16 +65,16 @@
     				<span class="icon icon-bar"></span>
     				<span class="icon icon-bar"></span>
     			</button>
-    			<a href="#" class="navbar-brand">Software Fair 2017</a>
+    			<a href="<?php echo base_url('/');?>" class="navbar-brand" >Software Fair 2017</a>
     		</div>
     		<div class="collapse navbar-collapse">
     			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="#home" class="smoothScroll">HOME</a></li>
-    				<li><a href="#work" class="smoothScroll">ABOUT</a></li>
-    				<li><a href="#team" class="smoothScroll">APPS</a></li>
-    				<li><a href="#portfolio" class="smoothScroll">GALLERY</a></li>
-    				<li><a href="#pricing" class="smoothScroll">TIMELINE</a></li>
-    				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+            <li><a href="<?php echo base_url('/');?>" class="smoothScroll"><strong>HOME</strong></a></li>
+    				<li><a href="#work" class="smoothScroll"><strong>ABOUT</strong></a></li>
+    				<li><a href="#team" class="smoothScroll"><strong>APPS</strong></a></li>
+    				<li><a href="#portfolio" class="smoothScroll"><strong>GALLERY</strong></a></li>
+    				<li><a href="#pricing" class="smoothScroll"><strong>TIMELINE</strong></a></li>
+    				<li><a href="#contact" class="smoothScroll"><strong>CONTACT</strong></a></li>
     			</ul>
     		</div>
     	</div>
@@ -85,7 +85,7 @@
     	<div class="container">
     		<div class="row">
     			<div class="col-md-12 col-sm-12">
-    				<h1>SOFTWARE FAIR 2017</h1>
+    				<h1  style="color:#F9062E">SOFTWARE FAIR 2017</h1>
     				<hr>
     				<h3>Find the Art of Technology</h3>
     				<a href="#work" class="smoothScroll btn btn-default">GuideLine SF 2017</a>
@@ -101,7 +101,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <h2 style="text-align:center;margin-bottom:20px; margin-top:-50px">REGISTRASI DEVELOPER</h2>
-            <form class="" action="<?php echo base_url('register/storeP');?>" method="post">
+            <form class="" action="<?php echo base_url('register/storeDev');?>" method="post">
               <input type="hidden" name="_token" value=" csrf_token() ">
                 <div class="form-group">
                   <input type="text" name="nim" class="form-control" placeholder="NIM" />
@@ -116,19 +116,19 @@
                   <input type="tel" name="telp" class="form-control" placeholder="Phone Number" />
                 </div>
                 <div class="form-group">
-                  <select class="form-control" id="sel1">
-                    <option>Select Type App</option>
-                    <option>Mobile App</option>
-                    <option>Web App</option>
-                    <option>Dekstop App</option>
-                    <option>Game App</option>
+                  <select class="form-control" name="type">
+                    <option disabled selected>Select Type App</option>
+                    <option name="type" value="mobile">Mobile App</option>
+                    <option name="type" value="web">Web App</option>
+                    <option name="type" value="dekstop">Dekstop App</option>
+                    <option name="type" value="game">Game App</option>
                   </select>
                </div>
                <div class="form-group">
                  <input type="text" name="name-app" class="form-control" placeholder="Name of Your App" />
                </div>
                <div class="form-group">
-                 <textarea name="dekripsi" rows="8" cols="75" placeholder="Description of Your App"></textarea>
+                 <textarea name="deskripsi" rows="8" cols="75" placeholder="Description of Your App"></textarea>
                </div>
                  <div class="text-center">
                    <input type="submit" name="Submit" value="Daftar" class="btn btn-lg btn-block btn-info">

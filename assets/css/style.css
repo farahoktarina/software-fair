@@ -52,7 +52,7 @@ hr {
 
 .section-title strong {
 	color: #F9062E;
-  	font-size: 56px;
+  font-size: 56px;
 }
 
 .section-title h1 {
@@ -607,7 +607,7 @@ pricing section
 contact section
 ========================================================================== */
 #contact {
-  background: #3B3B3B url('../images/contact-bg.jpg') no-repeat center center;
+  background: #3B3B3B url('/assets/images/contact-bg.jpg');
   background-size: cover;
   color: #ffffff;
 }
@@ -661,6 +661,7 @@ footer {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+
 }
 footer p {
   padding-top: 20px;
