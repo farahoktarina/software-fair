@@ -37,4 +37,9 @@ public function update($table,$data,$where)
 		$res = $data->row();
 		return $res->score;
 	}
+	public function getSaldo($where){
+		$data = $this->db->query('select * from developer'.' '.$where);
+		$res = $data->row();
+		return $res->saldo;
+	}
 }

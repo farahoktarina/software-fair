@@ -114,13 +114,13 @@
                             </li>
                         </ol>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-4 col-lg-offset-4"  style="margin-bottom:200px">
                       <h3>Input PIN Peserta</h3>
                       <form class="" action="<?php echo base_url('developer/check_pin');?>" method="post">
-                        <div class="form-group">
+                        <div class="form-group" style="margin-top:30px">
                           <input type="text" name="pin" class="form-control" placeholder="PIN" />
                         </div>
-                        <div class="text-center">
+                        <div class="text-center" style="margin-top:20px">
                           <input type="submit" name="Submit" value="Check" class="btn btn-lg btn-block btn-info">
                         </div>
                       </form>

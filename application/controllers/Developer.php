@@ -15,20 +15,23 @@ class Developer extends CI_Controller {
 
 	public function index()
 	{
-		//  $logged_in = $this->session->userdata('logged_in');
-		//
-		//
-    //         if (!$logged_in)
-    //         {
-    //             $this->load->view('developers/login_developer');
-		//
-    //         }else
-    //         {
-		// $this->load->view('developers/index');
-		// 	}
-		$data['dev'] = $this->mymodel->getData('developer');
-		$this->template->load('developers/index','developers/index',$data);
-		// $this->load->view('developers/index');
+		 $logged_in = $this->session->userdata('logged_in');
+
+
+            if (!$logged_in)
+            {
+                $this->load->view('developers/login_developer');
+
+            }else
+            {
+							$id_dev = $this->session->userdata('id_dev');
+							$where = "where id_dev = '".$id_dev."'";
+							$data['dev'] = $this->mymodel->getDataWhere('developer',$where);
+							$this->template->load('developers/index','developers/index',$data);
+			}
+		// $data['dev'] = $this->mymodel->getData('developer');
+		// $this->template->load('developers/index','developers/index',$data);
+
 	}
 
 	public function check(){
@@ -72,13 +75,23 @@ class Developer extends CI_Controller {
 		);
 		$where2=array('pin'=>$pin);
 		$this->mymodel->update('peserta',$data,$where2);
+		// decreasing saldo developer
+		$id_dev = $this->session->userdata('id_dev');
+		$where3 = "where id_dev = '".$id_dev."'";
+		$saldo=  $this->mymodel->getSaldo($where3);
+		$saldo = $saldo - $score;
+		$data2=array(
+			'saldo'=>$saldo
+		);
+		$where4=array('id_dev'=>$id_dev);
+		$this->mymodel->update('developer',$data2, $where4);
 		redirect('/developer');
 	}
 
 	public function login_dev()
 		{
 			$email_dev 		= $this->input->post('email_dev');
-			$password_dev	= $this->input->post('password_dev');
+			$password_dev	= md5($this->input->post('password_dev'));
 			$temp_account 	= $this->model_developer->check_user_account($email_dev, $password_dev)->row();
 
 			$this->load->library('form_validation');
@@ -107,24 +120,24 @@ class Developer extends CI_Controller {
 						'nama_dev'		=> $temp_account->nama_dev,
 						'email_dev'		=> $temp_account->email_dev,
 						'hp_dev'		=> $temp_account->hp_dev,
-						'nim_dev'		=> $temp_account->nim_dev,
 						'jenis_app'		=> $temp_account->jenis_app,
 						'deskripsi_app'	=> $temp_account->deskripsi_app,
 						'nama_app'		=> $temp_account->nama_app,
 						'saldo'			=> $temp_account->saldo,
 						'voting'		=> $temp_account->voting,
+						'created_at'=> $temp_account->created_at,
 
 						'logged_in' => true
 					);
 
 					$this->session->set_userdata($array_items);
-					redirect(site_url('Developer/index'));
+					redirect(site_url('Developer/saldo'));
 
 				}elseif ($num_account==0)
 				{
 					$this->session->set_flashdata('konfirmasi','Maaf , Username atau password salah.');
 
-					redirect(site_url('welcome'));
+					redirect('Developer/index');
 				}
 
 			}

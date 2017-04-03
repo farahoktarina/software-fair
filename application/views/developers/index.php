@@ -51,7 +51,7 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION["nama_dev"]?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -113,9 +113,9 @@
                                 <i class="fa fa-dashboard"></i> Dashboard
                             </li>
                         </ol>
-                        <?php foreach ($dev as $key){?>
-                        <h2>Your Saldo <span class="label label-default"><?php echo $key['saldo'] ?></span></h2>
-                         <?php }?>
+                          <?php foreach ($dev as $key){?>
+                        <h2>Your Saldo <span class="label label-default"><?php echo $key['saldo']?></span></h2>
+                        <?php } ?>
                     </div>
                 </div>
 
