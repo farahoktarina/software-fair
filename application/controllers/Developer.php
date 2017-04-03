@@ -65,8 +65,7 @@ class Developer extends CI_Controller {
 			$score=60;
 		}
 		$where = "where pin = '".$pin."'";
-		$peserta= $this->mymodel->getDataWhere('peserta',$where);
-		$now=$peserta->score;
+		$now=  $this->mymodel->getScore($where);
 		$now=$now+$score;
 		$data=array(
 			'score'=>$now

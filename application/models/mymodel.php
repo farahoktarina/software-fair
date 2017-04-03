@@ -31,5 +31,10 @@ public function update($table,$data,$where)
  {
 	$data = $this->db->query('select * from '.$tbl.' '.$where);
 	return $data->result_array();
-}
+	}
+	public function getScore($where){
+		$data = $this->db->query('select * from peserta'.' '.$where);
+		$res = $data->row();
+		return $res->score;
+	}
 }
