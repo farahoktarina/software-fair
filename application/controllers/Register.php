@@ -17,6 +17,35 @@ class Register extends CI_Controller {
 		$this->load->view('register/peserta');
 	}
 
+	public function admin()
+	{
+		$this->load->view('register/admin');
+	}
+
+	// method untuk menyimpan data admin
+	public function storeA(){
+		$this->load->model('mymodel');
+		$this->form_validation->set_rules('email_adm','email_adm','required');
+		$this->form_validation->set_rules('password_adm','password_adm','required');
+		if($this->form_validation->run() != false){
+			
+			$data = array(
+				'email_adm'=> $this->input->post('email_adm'),
+				'password_adm'=>md5($this->input->post('password_adm'))
+			);
+			$this->mymodel->insert('admin',$data);
+			// redirect(base_url(),'refresh');
+			redirect('/administrator');
+		}
+		else{
+			redirect('/register/admin');
+		}
+	}
+
+
+
+
+
 	// method untuk menyimpan data developer
 	public function storeDev(){
 		$this->load->model('mymodel');
