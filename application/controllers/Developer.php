@@ -108,7 +108,7 @@ class Developer extends CI_Controller {
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->session->set_flashdata('Konfirmasi','Maaf isi dahulu');
-				redirect(site_url('welcome'));
+				redirect(site_url('Developer'));
 			}else
 			{
 				if ($num_account > 0)
@@ -142,14 +142,12 @@ class Developer extends CI_Controller {
 
 			}
 
-
-
 		}
 
 		public function logout()
 		{
 			$this->session->sess_destroy();
-			redirect(site_url('welcome'));
+			redirect(site_url('/'));
 		}
 
 }

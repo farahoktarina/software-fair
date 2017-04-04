@@ -14,16 +14,16 @@ class Administrator extends CI_Controller {
 
 	public function index()
 	{
-		//  $logged_in = $this->session->userdata('logged_in');
-    //         if (!$logged_in)
-    //         {
-    //             $this->load->view('admins/login_admin');
-		//
-    //         }else
-    //         {
-		// $this->load->view('Admins/index');
-		// 	}
-			$this->load->view('Admins/index');
+		 $logged_in = $this->session->userdata('logged_in');
+            if (!$logged_in)
+            {
+                $this->load->view('admins/login_admin');
+
+            }else
+            {
+		$this->load->view('Admins/index');
+			}
+
 	}
 
 
@@ -47,7 +47,7 @@ class Administrator extends CI_Controller {
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->session->set_flashdata('Konfirmasi','Maaf isi dahulu');
-				redirect(site_url('welcome2'));
+				redirect(site_url('administrator'));
 			}else
 			{
 				if ($num_account > 0)
@@ -68,17 +68,16 @@ class Administrator extends CI_Controller {
 				{
 					$this->session->set_flashdata('konfirmasi','Maaf , Username atau password salah.');
 
-					redirect(site_url('welcome2'));
+					redirect('Administrator/index');
 				}
 
 			}
-
 		}
 
 		public function logout()
 		{
 			$this->session->sess_destroy();
-			redirect(site_url('welcome2'));
+			redirect(site_url('/'));
 		}
 
 }
