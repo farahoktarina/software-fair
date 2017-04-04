@@ -131,7 +131,7 @@ class Developer extends CI_Controller {
 					);
 
 					$this->session->set_userdata($array_items);
-					redirect(site_url('Developer/saldo'));
+					redirect(site_url('Developer/index'));
 
 				}elseif ($num_account==0)
 				{

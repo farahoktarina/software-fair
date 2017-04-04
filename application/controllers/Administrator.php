@@ -14,17 +14,16 @@ class Administrator extends CI_Controller {
 
 	public function index()
 	{
-		 $logged_in = $this->session->userdata('logged_in');
-
-
-            if (!$logged_in)
-            {
-                $this->load->view('admins/login_admin');
-
-            }else
-            {
-		$this->load->view('Admins/index');
-			}
+		//  $logged_in = $this->session->userdata('logged_in');
+    //         if (!$logged_in)
+    //         {
+    //             $this->load->view('admins/login_admin');
+		//
+    //         }else
+    //         {
+		// $this->load->view('Admins/index');
+		// 	}
+			$this->load->view('Admins/index');
 	}
 
 
