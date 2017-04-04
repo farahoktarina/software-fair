@@ -13,4 +13,12 @@ class Model_admin extends CI_model {
 			return $this->db->get();
 		}
 
+	function select_all()
+		{
+			$this->db->select('*');
+			$this->db->from('developer');
+		
+			return $this->db->get();
+		}
+
 }

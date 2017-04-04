@@ -83,13 +83,16 @@
                     </li>
 
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target=""><i class="fa fa-fw fa-arrows-v"></i> Developer <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="<?php echo site_url('Administrator/tampilsaldo');?>">Saldo</a>
                             </li>
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="<?php echo site_url('Administrator/tampilvoting');?>">Voting</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo site_url('Administrator/tampilscore');?>">Score</a>
                             </li>
                         </ul>
                     </li>
