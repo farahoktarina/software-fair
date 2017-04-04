@@ -8,6 +8,7 @@ class Administrator extends CI_Controller {
 		{
 			parent::__construct();
 			$this->load->model('model_admin');
+			$this->load->model('mymodel');
 			$this->load->helper('url');
 			$this->load->helper('form');
 		}
@@ -19,13 +20,15 @@ class Administrator extends CI_Controller {
             {
                 $this->load->view('admins/login_admin');
 
-            }else
+            }
+						else
             {
-		$this->load->view('Admins/index');
-			}
-
+							$email = $this->session->userdata('email_adm');
+							$where = "where email_adm = '".$email."'";
+							$data['adm'] = $this->mymodel->getDataWhere('admin',$where);
+							$this->template->load('admins/index','admins/index',$data);
+						}
 	}
-
 
 	public function login_adm()
 		{
@@ -83,16 +86,17 @@ class Administrator extends CI_Controller {
 		public function tampilsaldo()
 		{
 			$logged_in = $this->session->userdata('logged_in');
-	
-	
+
+
 			if (!$logged_in)
 			{
 				redirect(site_url('welcome2'));
-				
+
 			}else
 			{
-
-				$data['data_saldo'] = $this->model_admin->select_all()->result();
+				$order='voting';
+				$inc='desc';
+				$data['data_saldo'] = $this->model_admin->select_all($order,$inc);
 				$this->load->view('admins/tampil_datasaldo',$data);
 			}
 		}
@@ -100,16 +104,17 @@ class Administrator extends CI_Controller {
 		public function tampilvoting()
 		{
 			$logged_in = $this->session->userdata('logged_in');
-	
-	
+
+
 			if (!$logged_in)
 			{
 				redirect(site_url('welcome2'));
-				
+
 			}else
 			{
-
-				$data['data_voting'] = $this->model_admin->select_all()->result();
+				$order='voting';
+				$inc='desc';
+				$data['data_voting'] = $this->model_admin->select_all($order,$inc);
 				$this->load->view('admins/tampil_datavoting',$data);
 			}
 		}
@@ -117,18 +122,68 @@ class Administrator extends CI_Controller {
 		public function tampilscore()
 		{
 			$logged_in = $this->session->userdata('logged_in');
-	
-	
+
+
 			if (!$logged_in)
 			{
 				redirect(site_url('welcome2'));
-				
+
 			}else
 			{
-
-				$data['data_saldo'] = $this->model_admin->select_all()->result();
+				$order='voting';
+				$inc='desc';
+				$data['data_saldo'] = $this->model_admin->select_all($order,$inc);
 				$this->load->view('admins/tampil_datascore',$data);
 			}
 		}
+		public function check(){
+			$logged_in = $this->session->userdata('logged_in');
+						 if (!$logged_in)
+						 {
+								 $this->load->view('developers/login_developer');
 
+						 }else
+						 {
+							 $email = $this->session->userdata('email_adm');
+ 							$where = "where email_adm = '".$email."'";
+ 							$data['adm'] = $this->mymodel->getDataWhere('admin',$where);
+							$this->template->load('admins/check','admins/check',$data);
+			 }
+		}
+		public function check_pin(){
+			$pin=$this->input->post('pin');
+			$where = "where pin = '".$pin."'";
+			$data = $this->mymodel->getDataWhere('peserta',$where);
+			$count=count($data);
+			if($count>0){
+				redirect('administrator/point/'.$pin);
+			}
+			else{
+				redirect('administrator/check');
+			}
+		}
+		public function point($pin){
+			$where = "where pin = '".$pin."'";
+			$data ['peserta']= $this->mymodel->getDataWhere('peserta',$where);
+			$this->template->load('admins/point','admins/point',$data);
+		}
+		public function give_point($pin){
+			$point=$this->input->post('point');
+			if($point=='normal'){
+				$score=40;
+			}
+			else{
+				$score=60;
+			}
+			$where = "where pin = '".$pin."'";
+			$now=  $this->mymodel->getScore($where);
+			$now=$now+$score;
+			$data=array(
+				'score'=>$now
+			);
+			$where2=array('pin'=>$pin);
+			$this->mymodel->update('peserta',$data,$where2);
+
+			redirect('Administrator');
+		}
 }

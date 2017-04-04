@@ -46,12 +46,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">DEVELOPERS</a>
+                <a class="navbar-brand" href="index.html">HMTI UDINUS</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Farah <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><?php echo $_SESSION["email_adm"]?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -73,28 +73,27 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="<?php echo base_url('/developer');?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="<?php echo base_url('/administrator');?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('/developer/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
+                        <a href="<?php echo base_url('/administrator/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Result</a>
+                      <a href="<?php echo site_url('/Votting');?>" target="_blank"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Apps</a>
                     </li>
-
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target=""><i class="fa fa-fw fa-arrows-v"></i> Developer <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="<?php echo site_url('Administrator/tampilsaldo');?>">Saldo</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('Administrator/tampilvoting');?>">Voting</a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('Administrator/tampilscore');?>">Score</a>
-                            </li>
-                        </ul>
+                      <a href="<?php echo site_url('/Votting');?>"><i class="fa fa-fw fa-gift"></i> Penukaran Point</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Developers <i class="fa fa-fw fa-caret-down"></i></a>
+                      <ul id="demo" class="collapse">
+                        <li>
+                            <a href="<?php echo site_url('Administrator/tampilsaldo');?>">Saldo Terkecil</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('Administrator/tampilvoting');?>">Votting Result</a>
+                        </li>
+                      </ul>
                     </li>
 
                 </ul>

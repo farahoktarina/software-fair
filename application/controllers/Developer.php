@@ -35,7 +35,21 @@ class Developer extends CI_Controller {
 	}
 
 	public function check(){
-		$this->load->view('developers/check');
+		$logged_in = $this->session->userdata('logged_in');
+
+
+					 if (!$logged_in)
+					 {
+							 $this->load->view('developers/login_developer');
+
+					 }else
+					 {
+						 $id_dev = $this->session->userdata('id_dev');
+						 $where = "where id_dev = '".$id_dev."'";
+						 $data['dev'] = $this->mymodel->getDataWhere('developer',$where);
+						 $this->template->load('developers/check','developers/check',$data);
+		 }
+
 	}
 	public function check_pin(){
 
@@ -56,7 +70,7 @@ class Developer extends CI_Controller {
 		$where = "where pin = '".$pin."'";
 		$data ['peserta']= $this->mymodel->getDataWhere('peserta',$where);
 		$this->template->load('developers/point','developers/point',$data);
-		// $this->load->view('developers/point');
+
 	}
 
 	public function give_point($pin){

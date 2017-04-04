@@ -6,11 +6,25 @@ class Votting extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('form');
+		$this->load->model('mymodel');
 		$this->load->library('form_validation');
 	}
 	public function index()
 	{
-		$this->load->view('votting');
+		$logged_in = $this->session->userdata('logged_in');
+					 if (!$logged_in)
+					 {
+							 $this->load->view('admins/login_admin');
+
+					 }
+					 else
+					 {
+						 $email = $this->session->userdata('email_adm');
+						 $where = "where email_adm = '".$email."'";
+						 $data['adm'] = $this->mymodel->getDataWhere('admin',$where);
+						 $this->template->load('votting','votting',$data);
+					 }
+		// $this->load->view('votting');
 	}
 	public function voted(){
 		$this->load->model('mymodel');

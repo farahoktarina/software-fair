@@ -13,12 +13,12 @@ class Model_admin extends CI_model {
 			return $this->db->get();
 		}
 
-	function select_all()
+	function select_all($order,$inc)
 		{
 			$this->db->select('*');
 			$this->db->from('developer');
-		
-			return $this->db->get();
+			$this->db->order_by($order,$inc);
+			$query=$this->db->get();
+			return $query->result();
 		}
-
 }
