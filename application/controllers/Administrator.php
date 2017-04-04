@@ -82,4 +82,55 @@ class Administrator extends CI_Controller {
 			redirect(site_url('welcome2'));
 		}
 
+		public function tampilsaldo()
+		{
+			$logged_in = $this->session->userdata('logged_in');
+	
+	
+			if (!$logged_in)
+			{
+				redirect(site_url('welcome2'));
+				
+			}else
+			{
+
+				$data['data_saldo'] = $this->model_admin->select_all()->result();
+				$this->load->view('admins/tampil_datasaldo',$data);
+			}
+		}
+
+		public function tampilvoting()
+		{
+			$logged_in = $this->session->userdata('logged_in');
+	
+	
+			if (!$logged_in)
+			{
+				redirect(site_url('welcome2'));
+				
+			}else
+			{
+
+				$data['data_voting'] = $this->model_admin->select_all()->result();
+				$this->load->view('admins/tampil_datavoting',$data);
+			}
+		}
+
+		public function tampilscore()
+		{
+			$logged_in = $this->session->userdata('logged_in');
+	
+	
+			if (!$logged_in)
+			{
+				redirect(site_url('welcome2'));
+				
+			}else
+			{
+
+				$data['data_saldo'] = $this->model_admin->select_all()->result();
+				$this->load->view('admins/tampil_datascore',$data);
+			}
+		}
+
 }

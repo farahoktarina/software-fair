@@ -91,7 +91,7 @@
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target=""><i class="fa fa-fw fa-arrows-v"></i> Developer <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Developer <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
                                 <a href="<?php echo site_url('Administrator/tampilsaldo');?>">Saldo</a>
@@ -122,17 +122,100 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Dashboard <small>Statistics Overview</small>
+                            Developer <small>Tabel Data Voting</small>
                         </h1>
-                        <ol class="breadcrumb">
+                       <!--  <ol class="breadcrumb">
                             <li class="active">
                                 <i class="fa fa-dashboard"></i> Dashboard
                             </li>
-                        </ol>
+                        </ol> -->
                     </div>
                 </div>
                 <!-- /.row -->
-                <h2>farah</h2>
+                
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+
+           <!--  <?php if ($this->session->flashdata('editpsn') == TRUE):?>
+                <div role="alert" class="alert alert-danger alert-dismissable fade in">
+                    <button aria-label="Close" data-dismiss="alert" class="close" type="button">
+                    <span aria-hidden="true" class="fa fa-times"></span>
+                    </button>
+                    <p><?php echo $this->session->flashdata('editpsn'); ?></p>
+                </div>
+            <?php endif ?>
+
+            <?php if ($this->session->flashdata('delpsn') == TRUE):?>
+                <div role="alert" class="alert alert-danger alert-dismissable fade in">
+                    <button aria-label="Close" data-dismiss="alert" class="close" type="button">
+                    <span aria-hidden="true" class="fa fa-times"></span>
+                    </button>
+                    <p><?php echo $this->session->flashdata('delpsn'); ?></p>
+                </div>
+            <?php endif ?>
+        </div>
+ -->
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Detail Data Voting
+                </div>
+
+                <div class="panel-body">
+                   <!--  <p>
+                        <a href="<?php echo base_url();?>index.php/pasien/export_excelpasien" class="btn btn-primary btn-small ">Export to Excel</a>
+                    </p> -->
+                    <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Id Developer</th>
+                                <th>Nama</th>
+                                <th>Jenis App</th>
+                                <th>Nama App</th>
+                                <th>Voting</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <?php 
+                            $no=1; 
+                            foreach ($data_voting as $row) { ?>
+                            <tr>
+                                    <td><?php echo $no++;?></td>
+                                    <td><?php echo $row->id_dev;?></td>
+                                    <td><?php echo $row->nama_dev;?></td>
+                                    <td><?php echo $row->jenis_app;?></td>
+                                    <td><?php echo $row->nama_app;?></td>
+                                    <td><?php echo $row->voting;?></td>
+                                    <td align="center">
+                                        <div class="tooltip-demo">
+                                            <a data-toggle="tooltip" data-placement="top" title="Edit" href="<?php echo base_url()?>index.php/Administrator/editsaldo/<?php echo $row->id_dev;?>"  class="fa fa-edit fa-2x"></a>
+                                            <a data-toggle="tooltip" data-placement="top" title="Delete" href="<?php echo base_url()?>index.php/Administrator/deletesaldo/<?php echo $row->id_dev;?>" onclick="return confirm('Yakin ingin menghapus data ini?');" class="fa fa-trash-o fa-2x"></a>
+
+                                        </div>
+                                    </td>
+                            </tr>
+                            <?php  } ?>
+                        </tbody>
+                    </table>
+                            <!-- /.table-responsive -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
             </div>
             <!-- /.container-fluid -->
 
