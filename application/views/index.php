@@ -40,7 +40,7 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
 				<img src="<?php echo base_url();?>/assets/images/reward/talkshow.png" width="60px" height="60px">
-					<h3>TAKSHOW</h3>
+					<h3>TALKSHOW</h3>
 					<hr>
 					<p>Sebagai ilmu pengetahuan bagi developer untuk mengembangkan software dan memperkenalkannya aplikasi ke dunia luar (masyarakat)</p>
 			</div>
@@ -115,27 +115,27 @@
                			<div class="iso-box-wrapper col4-iso-box">
 
                				 <div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img1.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/1.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img2.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/2.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img3.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/3.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img4.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/4.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img5.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/5.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img6.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/6.jpg" alt="portfolio img"></a>
                				 </div>
 
                			</div>

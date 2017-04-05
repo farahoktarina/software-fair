@@ -51,7 +51,7 @@ hr {
 }
 
 .section-title strong {
-	color: #F9062E;
+	color: #EB7260;
   font-size: 56px;
 }
 
@@ -69,8 +69,8 @@ hr {
 
 #work,#about, #team,
 #portfolio, #pricing, #contact {
-   padding-top: 100px;
-  padding-bottom: 100px;
+   padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 
@@ -114,7 +114,7 @@ preloader section
   margin: 0 auto;
   width: 20%;
   height: 20%;
-  background-color: #F9062E;
+  background-color: #EB7260;
   border-radius: 100%;
   -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
           animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
@@ -222,7 +222,7 @@ navigation section
   font-style: bold;
 }
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #F9062E;
+    background: #EB7260;
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -242,14 +242,14 @@ navigation section
   outline: none;
 }
 .custom-navbar .nav li.active > a {
-      color: #F9062E;
+      color: #EB7260;
     }
 .custom-navbar .navbar-toggle {
         border: none;
         padding-top: 10px;
     }
 .custom-navbar .navbar-toggle .icon-bar {
-        background: #F9062E;
+        background: #EB7260;
         border-color: transparent;
     }
 @media(min-width:768px){
@@ -305,11 +305,11 @@ home section
   transition: all 0.4s ease-in-out;
 }
 #home .btn:hover {
-  background: #F9062E;
+  background: #EB7260;
   border-color: transparent;
 }
 #home .btn-danger {
-  background: #F9062E;
+  background: #EB7260;
   border-color: transparent;
 }
 #home .btn-danger:hover {
@@ -368,7 +368,7 @@ about section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #F9062E;
+  color: #EB7260;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
@@ -395,7 +395,7 @@ team section
 
 }
 #team h3 {
-  color: #F9062E;
+  color: #EB7260;
   font-size: 14px;
   font-weight: bold;
 }
@@ -448,7 +448,7 @@ team section
 }
 
 #team .social-icon li a:hover {
-  color: #F9062E;
+  color: #EB7260;
 }
 
 /* ==========================================================================
@@ -495,7 +495,7 @@ portfolio section
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    color: #F9062E;
+    color: #EB7260;
     outline: none;
   }
 
@@ -590,7 +590,7 @@ pricing section
   text-transform: uppercase;
 }
 #pricing .plan-one .btn {
-  background-color: #F9062E;
+  background-color: #EB7260;
 }
 #pricing .plan-two .btn {
   background-color: #ffa400;
@@ -642,8 +642,8 @@ contact section
   height: 40px;
 }
 #contact input[type="submit"] {
-  background: #F9062E;
-  border: 3px solid #F9062E;
+  background: #EB7260;
+  border: 3px solid #EB7260;
   letter-spacing: 1px;
   margin-top: 18px;
   height: 50px;
@@ -687,7 +687,7 @@ footer p {
   transition: all 0.4s ease-in-out;
 }
 .social-icon li a:hover {
-  color: #F9062E;
+  color: #EB7260;
 }
 
 @media screen and (min-width: 992px) {
