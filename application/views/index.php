@@ -16,8 +16,21 @@
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-10 col-md-offset-2" style="text-align:center">
-				<p>SF adalah ajang pameran perangkat lunak / software yang merupakan hasil developer mahasiswa udinus fakultas ilmu komputer terhadap dunia luar. Sebagai penjembatan mahasiswa dengan perusahaan atauinstansi yang di undang , untuk menciptakan kerjasama yang saling menguntungkan
-Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa kualitas software mahasiswa Universitas Dian Nuswantoro dapat bersaing dengan dunia luar</p>
+				<p>Software Fair merupakan suatu ajang pameran perangkat lunak (software) yang menampilkan hasil karya terbaik para developer dari mahasiswa Universitas Dian Nuswantoro Fakultas Ilmu Komputer. Dengan adanya Software Fair, diharapkan banyak mahasiswa, dosen, bahkan masyarakat umum mengetahui bahwa dari mahasiswa Teknik Informatika Universitas Dian Nuswantoro banyak tercipta software-software yang menarik, efisien yang dapat digunakan sebagai kebutuhan masing-masing. Selain itu kegiatan ini bertujuan sebagai penjembatan mahasiswa dengan perusahaan atau instansi yang di undang, untuk menciptakan kerjasama yang saling menguntungkan. Serta dari acara ini dapat memancing kreatifitas mahasiswa Teknik Informatika kedepannya, dan membuktikan bahwa kualitas software mahasiswa Universitas Dian Nuswantoro dapat bersaing dengan dunia luar.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- work 2 section -->
+<section id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<h1 class="heading bold">FASILITAS SOFTWARE FAIR</h1>
+					<hr>
+				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 					<img src="<?php echo base_url();?>/assets/images/reward/sertifikat.png" width="60px" height="60px">
@@ -29,7 +42,7 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 				<img src="<?php echo base_url();?>/assets/images/reward/talkshow.png" width="60px" height="60px">
 					<h3>TAKSHOW</h3>
 					<hr>
-					<p>Sebagai ilmu pengetahuan bagi developer untuk start up / mengembangkan software ke dunia luar</p>
+					<p>Sebagai ilmu pengetahuan bagi developer untuk mengembangkan software dan memperkenalkannya aplikasi ke dunia luar (masyarakat)</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
 					<img src="<?php echo base_url();?>/assets/images/reward/haki.png" width="60px" height="60px">
@@ -145,89 +158,88 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 			</div>
 			<div class="col-lg-12">
         <ul class="timeline">
-          <li>
+          <li class="timeline-inverted">
             <div class="timeline-image" style="background-color:#00c6d7">
-              <h4><br>Registration</h4>
+              <h4><br>Pembukaan Acara</h4>
                 </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>08.00 - 09.00 WIB</h4>
                       </div>
                       <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                      </div>
-                  </div>
-              </li>
-              <li class="timeline-inverted">
-                  <div class="timeline-image" style="background-color:#00c6d7">
-                      <h4><br>Opening</h4>
-                  </div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4><br>09.00 - 09.30 WIB</h4>
-                          <!-- <h4 class="subheading">An Agency is Born</h4> -->
-                      </div>
-                      <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                          <p class="text-muted">Pembukaan acara dilaksanakan di Galeri Lantai 1 Gedung H.</p>
                       </div>
                   </div>
               </li>
               <li>
-                  <div class="timeline-image">
-                      <h4>Materi <br>&amp; Diskusi<br>Panel I</h4>
+                  <div class="timeline-image" style="background-color:#00c6d7">
+                      <h4><br>Pameran Aplikasi</h4>
                   </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
-                          <h4>09.30 - 12.00 WIB</h4>
-                          <h4 class="subheading">Mr. Ajib</h4>
+                          <h4><br>09.00 - 12.00 WIB</h4>
+                          <!-- <h4 class="subheading">An Agency is Born</h4> -->
                       </div>
                       <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                      </div>
+                          <p class="text-muted">Pameran Aplikasi ini developer mempresentasikan hasil karya mereka. Selama pameran aplikasi berlangsung, didalam acara ini juga terdapat gamification (game untuk para pengunjung)</p>
                   </div>
               </li>
-              <li class="timeline-inverted">
+							<li class="timeline-inverted">
                   <div class="timeline-image">
-                      <h4><br>Break</h4>
+                      <h4><br>ISHOMA</h4>
                   </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>12.00 - 13.00 WIB</h4>
-                          <h4 class="subheading">Ishoma</h4>
+                          <h4 class="subheading">ISHOMA</h4>
                       </div>
                       <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                          <p class="text-muted"></p>
                       </div>
                   </div>
               </li>
               <li>
                   <div class="timeline-image">
-                      <h4>Materi <br>&amp; Diskusi<br>Panel II</h4>
+                      <h4>Talkshow</h4>
                   </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
-                          <h4>13.00 - 15.30 WIB</h4>
-                          <h4 class="subheading">Mr. Ajib</h4>
+                          <h4>13.00 - 14.00 WIB</h4>
+
                       </div>
                       <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                          <p class="text-muted">developer dan pengunjung dapat mengikut acara talkshow.</p>
                       </div>
                   </div>
               </li>
               <li class="timeline-inverted">
                   <div class="timeline-image">
-                      <h4><br>Closing</h4>
-                  </div>
-                  <div class="timeline-panel">
-                      <div class="timeline-heading">
-                          <h4><br>15.30 - 16.00 WIB</h4>
-                          <!-- <h4 class="subheading">An Agency is Born</h4> -->
-                      </div>
-                      <div class="timeline-body">
-                          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                      </div>
-                  </div>
+										<h4><br>Pameran Aplikasi</h4>
+								</div>
+								<div class="timeline-panel">
+										<div class="timeline-heading">
+												<h4><br>14.00 - 15.00 WIB</h4>
+												<!-- <h4 class="subheading">An Agency is Born</h4> -->
+										</div>
+										<div class="timeline-body">
+												<p class="text-muted">Pameran Aplikasi ini developer mempresentasikan hasil karya mereka. Selama pameran aplikasi berlangsung, didalam acara ini juga terdapat gamification (game untuk para pengunjung)</p>
+								</div>
               </li>
+
+							<li>
+									<div class="timeline-image">
+											<h4>CLOSING</h4>
+									</div>
+									<div class="timeline-panel">
+											<div class="timeline-heading">
+													<h4>15.30 - 16.00 WIB</h4>
+
+											</div>
+											<div class="timeline-body">
+													<p class="text-muted"></p>
+											</div>
+									</div>
+							</li>
           </ul>
       </div>
 		</div>
