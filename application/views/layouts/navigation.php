@@ -19,14 +19,9 @@
 <!-- navigation section -->
 <section class="navbar navbar-fixed-top custom-navbar" role="navigation">
 	<div class="container">
-		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<a href="<?php echo base_url('/');?>" class="navbar-brand">Software Fair 2017</a>
-		</div>
+
+			<a href="<?php echo base_url('/');?>" class="navbar-brand"><img src="<?php echo base_url();?>/assets/images/sf.png"  width="38px" height="38px"> SOFTWARE FAIR 2017</a>
+
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo base_url('/');?>" class="smoothScroll"><strong>HOME</strong></a></li>
@@ -45,7 +40,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<h1  style="color:#F9062E">SOFTWARE FAIR 2017</h1>
+				<h1  style="color:#D96459">SOFTWARE FAIR 2017</h1>
 				<hr>
 				<h3>Find the Art of Technology</h3>
 				<a href="#work" class="smoothScroll btn btn-default">GuideLine SF 2017</a>

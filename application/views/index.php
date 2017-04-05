@@ -16,8 +16,21 @@
 				</div>
 			</div>
 			<div class="col-md-8 col-sm-10 col-md-offset-2" style="text-align:center">
-				<p>SF adalah ajang pameran perangkat lunak / software yang merupakan hasil developer mahasiswa udinus fakultas ilmu komputer terhadap dunia luar. Sebagai penjembatan mahasiswa dengan perusahaan atauinstansi yang di undang , untuk menciptakan kerjasama yang saling menguntungkan
-Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa kualitas software mahasiswa Universitas Dian Nuswantoro dapat bersaing dengan dunia luar</p>
+				<p>Software Fair merupakan suatu ajang pameran perangkat lunak (software) yang menampilkan hasil karya terbaik para developer dari mahasiswa Universitas Dian Nuswantoro Fakultas Ilmu Komputer. Dengan adanya Software Fair, diharapkan banyak mahasiswa, dosen, bahkan masyarakat umum mengetahui bahwa dari mahasiswa Teknik Informatika Universitas Dian Nuswantoro banyak tercipta software-software yang menarik, efisien yang dapat digunakan sebagai kebutuhan masing-masing. Selain itu kegiatan ini bertujuan sebagai penjembatan mahasiswa dengan perusahaan atau instansi yang di undang, untuk menciptakan kerjasama yang saling menguntungkan. Serta dari acara ini dapat memancing kreatifitas mahasiswa Teknik Informatika kedepannya, dan membuktikan bahwa kualitas software mahasiswa Universitas Dian Nuswantoro dapat bersaing dengan dunia luar.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- work 2 section -->
+<section id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<h1 class="heading bold">FASILITAS SOFTWARE FAIR</h1>
+					<hr>
+				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
 					<img src="<?php echo base_url();?>/assets/images/reward/sertifikat.png" width="60px" height="60px">
@@ -27,9 +40,9 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.9s">
 				<img src="<?php echo base_url();?>/assets/images/reward/talkshow.png" width="60px" height="60px">
-					<h3>TAKSHOW</h3>
+					<h3>TALKSHOW</h3>
 					<hr>
-					<p>Sebagai ilmu pengetahuan bagi developer untuk start up / mengembangkan software ke dunia luar</p>
+					<p>Sebagai ilmu pengetahuan bagi developer untuk mengembangkan software dan memperkenalkannya aplikasi ke dunia luar (masyarakat)</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="1s">
 					<img src="<?php echo base_url();?>/assets/images/reward/haki.png" width="60px" height="60px">
@@ -102,27 +115,27 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
                			<div class="iso-box-wrapper col4-iso-box">
 
                				 <div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img1.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/1.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img2.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/2.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img3.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/3.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img4.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/4.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img5.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/5.jpg" alt="portfolio img"></a>
                				 </div>
 
                				 <div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6">
-               				 	<a href="<?php echo base_url();?>/assets/images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/portfolio-img6.jpg" alt="portfolio img"></a>
+               				 	<a href="<?php echo base_url();?>/assets/images/6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="<?php echo base_url();?>/assets/images/6.jpg" alt="portfolio img"></a>
                				 </div>
 
                			</div>
@@ -145,15 +158,51 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 			</div>
 			<div class="col-lg-12">
         <ul class="timeline">
+<<<<<<< HEAD
+          <li class="timeline-inverted">
+            <div class="timeline-image" style="background-color:#00c6d7">
+              <h4><br>Pembukaan Acara</h4>
+=======
           <li>
             <div class="timeline-image" style="background-color:#F9062E">
               <h4>Day 1 Opening Ceremony</h4>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
                 </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4 style="color:#F9062E">08.00 - 09.00 WIB</h4>
                       </div>
                       <div class="timeline-body">
+<<<<<<< HEAD
+                          <p class="text-muted">Pembukaan acara dilaksanakan di Galeri Lantai 1 Gedung H.</p>
+                      </div>
+                  </div>
+              </li>
+              <li>
+                  <div class="timeline-image" style="background-color:#00c6d7">
+                      <h4><br>Pameran Aplikasi</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4><br>09.00 - 12.00 WIB</h4>
+                          <!-- <h4 class="subheading">An Agency is Born</h4> -->
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted">Pameran Aplikasi ini developer mempresentasikan hasil karya mereka. Selama pameran aplikasi berlangsung, didalam acara ini juga terdapat gamification (game untuk para pengunjung)</p>
+                  </div>
+              </li>
+							<li class="timeline-inverted">
+                  <div class="timeline-image">
+                      <h4><br>ISHOMA</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>12.00 - 13.00 WIB</h4>
+                          <h4 class="subheading">ISHOMA</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted"></p>
+=======
                           <p class="text-muted" style="color:#fff">
                           	Pembukaan Software Fair 2017 yang dihadiri oleh Deveoper-developer dan para Tamu Undangan
                           </p>
@@ -205,10 +254,23 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
 														Pameran Aplikasi oleh Developer disertai dengan Gamification. Di hari kedua ini peserta Gamification
 														berkesempatan untuk menukarkan point yang telah dikumpulkan dengan merchandise Software Fair 2017.
 														</p>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
                       </div>
                   </div>
               </li>
               <li>
+<<<<<<< HEAD
+                  <div class="timeline-image">
+                      <h4>Talkshow</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4>13.00 - 14.00 WIB</h4>
+
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted">developer dan pengunjung dapat mengikut acara talkshow.</p>
+=======
                   <div class="timeline-image"  style="background-color:#F9062E">
                       <h4>Demo Aplikasi</h4>
                   </div>
@@ -221,10 +283,24 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
                           	Sebanyak 5 aplikasi terpilih berdasarkan saldo yang dimiliki paling sedikit di masing-masing gallery.
 														Adapun juri-juri yang kemudian akan memilih 3 aplikasi terbaik dan berhak mendapatkan reward.
                           </p>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
                       </div>
                   </div>
               </li>
               <li class="timeline-inverted">
+<<<<<<< HEAD
+                  <div class="timeline-image">
+										<h4><br>Pameran Aplikasi</h4>
+								</div>
+								<div class="timeline-panel">
+										<div class="timeline-heading">
+												<h4><br>14.00 - 15.00 WIB</h4>
+												<!-- <h4 class="subheading">An Agency is Born</h4> -->
+										</div>
+										<div class="timeline-body">
+												<p class="text-muted">Pameran Aplikasi ini developer mempresentasikan hasil karya mereka. Selama pameran aplikasi berlangsung, didalam acara ini juga terdapat gamification (game untuk para pengunjung)</p>
+								</div>
+=======
                   <div class="timeline-image" style="background-color:#F9062E">
                       <h4>Awarding & Closing</h4>
                   </div>
@@ -238,7 +314,23 @@ Memancing kreatifitas mahasiswa teknik informatika kedepannya. Membuktikan bahwa
                           </p>
                       </div>
                   </div>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
               </li>
+
+							<li>
+									<div class="timeline-image">
+											<h4>CLOSING</h4>
+									</div>
+									<div class="timeline-panel">
+											<div class="timeline-heading">
+													<h4>15.30 - 16.00 WIB</h4>
+
+											</div>
+											<div class="timeline-body">
+													<p class="text-muted"></p>
+											</div>
+									</div>
+							</li>
           </ul>
       </div>
 		</div>
