@@ -106,9 +106,7 @@
                 <div class="form-group">
                   <input type="text" name="email_adm" class="form-control" placeholder="Email" />
                 </div>
-                <div class="form-group">
-                  <input type="password" name="password_adm" class="form-control" placeholder="Password" />
-                </div>
+                
                  <div class="text-center">
                    <input type="submit" name="Submit" value="Daftar" class="btn btn-lg btn-block btn-info">
                  </div>
@@ -136,7 +134,7 @@
       </div>
     </footer>
 <script>
-  
+
 // ISOTOPE FILTER
 jQuery(document).ready(function($){
 

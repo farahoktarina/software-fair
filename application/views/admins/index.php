@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SF | Developers</title>
+    <title>SF | Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo base_url();?>/assets/dev/css/bootstrap.min.css" rel="stylesheet">

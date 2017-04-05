@@ -33,18 +33,16 @@ class Administrator extends CI_Controller {
 	public function login_adm()
 		{
 			$email_adm 		= $this->input->post('email_adm');
-			$password_adm	= $this->input->post('password_adm');
+			$password_adm	= md5($this->input->post('password_adm'));
 			$temp_account 	= $this->model_admin->check_user_account($email_adm, $password_adm)->row();
 
 			$this->load->library('form_validation');
-
-
 			$this->form_validation->set_rules('email_adm', 'email_adm', 'required');
 			$this->form_validation->set_rules('password_adm', 'password_adm', 'required');
 
 			$num_account 		= count($temp_account);
-			$num_email_adm		= count($email_adm);
-			$num_password_adm	= count($password_adm);
+			// $num_email_adm		= count($email_adm);
+			// $num_password_adm	= count($password_adm);
 
 
 			if ($this->form_validation->run() == FALSE)
@@ -67,7 +65,7 @@ class Administrator extends CI_Controller {
 					$this->session->set_userdata($array_items);
 					redirect(site_url('Administrator/index'));
 
-				}elseif ($num_account==0)
+				}else
 				{
 					$this->session->set_flashdata('konfirmasi','Maaf , Username atau password salah.');
 
