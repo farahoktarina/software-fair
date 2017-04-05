@@ -51,17 +51,12 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION["nama_dev"]?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        </li>
+
                         <li class="divider"></li>
                         <li>
                             <a href="<?php echo site_url('developer/logout');?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
@@ -78,9 +73,6 @@
                   <li>
                       <a href="<?php echo base_url('/developer/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
                   </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Result</a>
-                    </li>
 
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
@@ -129,8 +121,9 @@
                         <div class="form-group">
                           <select class="form-control" name="point">
                             <option disabled selected>Points</option>
-                            <option name="point" value="hard">60</option>
-                            <option name="point" value="normal">40</option>
+                            <option name="point" value="normal">40 Points (Normal)</option>
+                            <option name="point" value="hard">60 Points (Hard)</option>
+
                           </select>
                        </div>
                         <div class="text-center">

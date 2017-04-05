@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Register Peserta</title>
+    <title>Register Admin</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@
     <script src="<?php echo base_url();?>assets/js/nivo-lightbox.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/jquery.backstretch.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/wow.min.js"></script>
-    <script src="<?php echo base_url();?>/assets/js/custom.js"></script>
+    <script src="<?php echo base_url();?>assets/js/custom.js"></script>
     <script src="<?php echo base_url();?>assets/js/agency.js"></script>
 
   </head>
@@ -65,7 +65,7 @@
     				<span class="icon icon-bar"></span>
     				<span class="icon icon-bar"></span>
     			</button>
-    			<a href="#" class="navbar-brand" >Software Fair 2017</a>
+    			<a href="<?php echo base_url('/');?>" class="navbar-brand" >Software Fair 2017</a>
     		</div>
     		<div class="collapse navbar-collapse">
     			<ul class="nav navbar-nav navbar-right">
@@ -100,24 +100,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <h2 style="text-align:center;margin-bottom:20px; margin-top:-50px">REGISTRASI GAMIFICATION</h2>
-            <form class="" action="<?php echo base_url('register/storeP');?>" method="post">
+            <h2 style="text-align:center;margin-bottom:20px; margin-top:-50px">REGISTRASI ADMIN</h2>
+            <form class="" action="<?php echo base_url('register/storeA');?>" method="post">
               <input type="hidden" name="_token" value=" csrf_token() ">
                 <div class="form-group">
-                  <input type="text" name="pin" class="form-control" value="<?php echo substr(str_shuffle(str_repeat("0123456789abcdefghijklmnopqrstuvwxyz",3)),0,5)?>"
-                  readonly="true" style="font-size:24px">
+                  <input type="text" name="email_adm" class="form-control" placeholder="Email" />
                 </div>
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" />
+                  <input type="password" name="password_adm" class="form-control" placeholder="Password" />
                 </div>
-                <div class="form-group">
-                   <input type="email" class="form-control" name="email" placeholder="Email"/>
-                </div>
-                <div class="form-group" style="text-align:center">
-                  <label for="kategori" style="font-size:16px"><strong>Kategori</strong></label><br>
-                  <input type="radio" name="kategori" value="mhs" > Mahasiswa
-                  <input type="radio" name="kategori" value="umum" style="margin-left:20px"> Umum
-               </div>
                  <div class="text-center">
                    <input type="submit" name="Submit" value="Daftar" class="btn btn-lg btn-block btn-info">
                  </div>
@@ -144,114 +135,114 @@
         </div>
       </div>
     </footer>
-  <script>
+<script>
+  
+// ISOTOPE FILTER
+jQuery(document).ready(function($){
 
-  // ISOTOPE FILTER
-  jQuery(document).ready(function($){
+  if ( $('.iso-box-wrapper').length > 0 ) {
 
-    if ( $('.iso-box-wrapper').length > 0 ) {
+      var $container  = $('.iso-box-wrapper'),
+        $imgs     = $('.iso-box img');
 
-        var $container  = $('.iso-box-wrapper'),
-          $imgs     = $('.iso-box img');
-
-        $container.imagesLoaded(function () {
-
-          $container.isotope({
-          layoutMode: 'fitRows',
-          itemSelector: '.iso-box'
-          });
-
-          $imgs.load(function(){
-            $container.isotope('reLayout');
-          })
-
-        });
-
-        //filter items on button click
-
-        $('.filter-wrapper li a').click(function(){
-
-            var $this = $(this), filterValue = $this.attr('data-filter');
+      $container.imagesLoaded(function () {
 
         $container.isotope({
-          filter: filterValue,
-          animationOptions: {
-              duration: 750,
-              easing: 'linear',
-              queue: false,
-          }
+        layoutMode: 'fitRows',
+        itemSelector: '.iso-box'
         });
 
-        // don't proceed if already selected
+        $imgs.load(function(){
+          $container.isotope('reLayout');
+        })
 
-        if ( $this.hasClass('selected') ) {
-          return false;
+      });
+
+      //filter items on button click
+
+      $('.filter-wrapper li a').click(function(){
+
+          var $this = $(this), filterValue = $this.attr('data-filter');
+
+      $container.isotope({
+        filter: filterValue,
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false,
         }
+      });
 
-        var filter_wrapper = $this.closest('.filter-wrapper');
-        filter_wrapper.find('.selected').removeClass('selected');
-        $this.addClass('selected');
+      // don't proceed if already selected
 
-          return false;
-        });
-
-    }
-
-  });
-
-
-  // PRELOADER JS
-  $(window).load(function(){
-      $('.preloader').fadeOut(1000); // set duration in brackets
-  });
-
-
-  // jQuery to collapse the navbar on scroll //
-  $(window).scroll(function() {
-      if ($(".navbar").offset().top > 50) {
-          $(".navbar-fixed-top").addClass("top-nav-collapse");
-      } else {
-          $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      if ( $this.hasClass('selected') ) {
+        return false;
       }
+
+      var filter_wrapper = $this.closest('.filter-wrapper');
+      filter_wrapper.find('.selected').removeClass('selected');
+      $this.addClass('selected');
+
+        return false;
+      });
+
+  }
+
+});
+
+
+// PRELOADER JS
+$(window).load(function(){
+    $('.preloader').fadeOut(1000); // set duration in brackets
+});
+
+
+// jQuery to collapse the navbar on scroll //
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+
+/* HTML document is loaded. DOM is ready.
+-------------------------------------------*/
+$(function(){
+
+  // ------- WOW ANIMATED ------ //
+  wow = new WOW(
+  {
+    mobile: false
   });
+  wow.init();
 
 
-  /* HTML document is loaded. DOM is ready.
-  -------------------------------------------*/
-  $(function(){
-
-    // ------- WOW ANIMATED ------ //
-    wow = new WOW(
-    {
-      mobile: false
+  // HIDE MOBILE MENU AFTER CLIKING ON A LINK
+  $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
     });
-    wow.init();
 
 
-    // HIDE MOBILE MENU AFTER CLIKING ON A LINK
-    $('.navbar-collapse a').click(function(){
-          $(".navbar-collapse").collapse('hide');
-      });
+  // NIVO LIGHTBOX
+  $('.iso-box-section a').nivoLightbox({
+        effect: 'fadeScale',
+    });
 
 
-    // NIVO LIGHTBOX
-    $('.iso-box-section a').nivoLightbox({
-          effect: 'fadeScale',
-      });
+  // HOME BACKGROUND SLIDESHOW
+  $(function(){
+    jQuery(document).ready(function() {
+    $('#home').backstretch([
+       "../assets/images/home-bg-slideshow1.jpg",
+       "../assets/images/home-bg-slideshow2.jpg",
+        ],  {duration: 2000, fade: 750});
+    });
+  })
 
+});
 
-    // HOME BACKGROUND SLIDESHOW
-    $(function(){
-      jQuery(document).ready(function() {
-      $('#home').backstretch([
-         "../assets/images/home-bg-slideshow1.jpg",
-         "../assets/images/home-bg-slideshow2.jpg",
-          ],  {duration: 2000, fade: 750});
-      });
-    })
-
-  });
-
-  </script>
+</script>
   </body>
 </html>

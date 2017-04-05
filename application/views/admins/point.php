@@ -51,45 +51,50 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION["nama_dev"]?> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION["email_adm"]?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
-                      
+
                         <li class="divider"></li>
                         <li>
-                            <a href="<?php echo site_url('developer/logout');?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="<?php echo site_url('administrator/logout');?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
             </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
+              <ul class="nav navbar-nav side-nav">
                   <li class="active">
-                      <a href="<?php echo base_url('/developer');?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                      <a href="<?php echo base_url('/administrator');?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                   </li>
                   <li>
-                      <a href="<?php echo base_url('/developer/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
+                      <a href="<?php echo base_url('/administrator/check');?>"><i class="fa fa-fw fa-edit"></i> Give Points</a>
                   </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Result</a>
-                    </li>
+                  <li>
+                      <a href="<?php echo site_url('/Votting');?>" target="_blank"><i class="fa fa-fw fa-bar-chart-o"></i> Votting Apps</a>
+                  </li>
+                  <li>
+                    <a href="<?php echo site_url('/Votting');?>" target="_blank"><i class="fa fa-fw fa-gift"></i> Penukaran Point</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Developer <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
+                        <li>
+                            <a href="<?php echo site_url('Administrator/tampilsaldo');?>">Saldo Terkecil</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('Administrator/tampilvoting');?>">Votting Result</a>
+                        </li>
+                        <li>
+                          <a href="<?php echo site_url('/Votting');?>"><i class="fa fa-fw fa-gift"></i> Penukaran Point</a>
+                        </li>
+                    </ul>
+                  </li>
 
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                </ul>
+              </ul>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
@@ -105,21 +110,38 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-edit"></i> Points
+                                <i class="fa fa-edit"></i> Give Points
                             </li>
                         </ol>
                     </div>
-                    <div class="col-lg-4 col-lg-offset-4"  style="margin-bottom:200px">
-                      <h3>Input PIN Peserta</h3>
-                      <form class="" action="<?php echo base_url('developer/check_pin');?>" method="post">
-                        <div class="form-group" style="margin-top:30px">
-                          <input type="text" name="pin" class="form-control" placeholder="PIN" />
-                        </div>
-                        <div class="text-center" style="margin-top:20px">
-                          <input type="submit" name="Submit" value="Check" class="btn btn-lg btn-block btn-info">
+                    <?php foreach ($peserta as $key){?>
+                    <div class="col-lg-6">
+
+                        <h3>PIN : <?php echo $key['pin'] ?></h3>
+
+
+                        <h3>Nama Peserta : <?php echo $key['nama_pes'] ?></h3>
+
+                        <h3>Score : <?php echo $key['score'] ?></h3>
+
+                    </div>
+                    <div class="col-lg-4 col-offset-lg-1">
+                      <h3>Give Points</h3>
+                      <form class="" action="<?php echo base_url('administrator/give_point/'.$key['pin']);?>" method="post">
+                        <div class="form-group">
+                          <select class="form-control" name="point">
+                            <option disabled selected>Points</option>
+                            <option name="point" value="normal">40 Points (Normal)</option>
+                            <option name="point" value="hard">60 Points (Hard)</option>
+
+                          </select>
+                       </div>
+                        <div class="text-center">
+                          <input type="submit" name="Submit" value="Give Points" class="btn btn-lg btn-block btn-info">
                         </div>
                       </form>
                     </div>
+                    <?php }?>
                 </div>
 
                 <!-- /.row -->

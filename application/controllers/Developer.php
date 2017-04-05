@@ -35,7 +35,21 @@ class Developer extends CI_Controller {
 	}
 
 	public function check(){
-		$this->load->view('developers/check');
+		$logged_in = $this->session->userdata('logged_in');
+
+
+					 if (!$logged_in)
+					 {
+							 $this->load->view('developers/login_developer');
+
+					 }else
+					 {
+						 $id_dev = $this->session->userdata('id_dev');
+						 $where = "where id_dev = '".$id_dev."'";
+						 $data['dev'] = $this->mymodel->getDataWhere('developer',$where);
+						 $this->template->load('developers/check','developers/check',$data);
+		 }
+
 	}
 	public function check_pin(){
 
@@ -56,7 +70,7 @@ class Developer extends CI_Controller {
 		$where = "where pin = '".$pin."'";
 		$data ['peserta']= $this->mymodel->getDataWhere('peserta',$where);
 		$this->template->load('developers/point','developers/point',$data);
-		// $this->load->view('developers/point');
+
 	}
 
 	public function give_point($pin){
@@ -108,7 +122,7 @@ class Developer extends CI_Controller {
 			if ($this->form_validation->run() == FALSE)
 			{
 				$this->session->set_flashdata('Konfirmasi','Maaf isi dahulu');
-				redirect(site_url('welcome'));
+				redirect(site_url('Developer'));
 			}else
 			{
 				if ($num_account > 0)
@@ -131,7 +145,7 @@ class Developer extends CI_Controller {
 					);
 
 					$this->session->set_userdata($array_items);
-					redirect(site_url('Developer/saldo'));
+					redirect(site_url('Developer/index'));
 
 				}elseif ($num_account==0)
 				{
@@ -142,14 +156,12 @@ class Developer extends CI_Controller {
 
 			}
 
-
-
 		}
 
 		public function logout()
 		{
 			$this->session->sess_destroy();
-			redirect(site_url('welcome'));
+			redirect(site_url('/'));
 		}
 
 }

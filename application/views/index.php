@@ -158,15 +158,22 @@
 			</div>
 			<div class="col-lg-12">
         <ul class="timeline">
+<<<<<<< HEAD
           <li class="timeline-inverted">
             <div class="timeline-image" style="background-color:#00c6d7">
               <h4><br>Pembukaan Acara</h4>
+=======
+          <li>
+            <div class="timeline-image" style="background-color:#F9062E">
+              <h4>Day 1 Opening Ceremony</h4>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
                 </div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
-                          <h4>08.00 - 09.00 WIB</h4>
+                          <h4 style="color:#F9062E">08.00 - 09.00 WIB</h4>
                       </div>
                       <div class="timeline-body">
+<<<<<<< HEAD
                           <p class="text-muted">Pembukaan acara dilaksanakan di Galeri Lantai 1 Gedung H.</p>
                       </div>
                   </div>
@@ -195,10 +202,64 @@
                       </div>
                       <div class="timeline-body">
                           <p class="text-muted"></p>
+=======
+                          <p class="text-muted" style="color:#fff">
+                          	Pembukaan Software Fair 2017 yang dihadiri oleh Deveoper-developer dan para Tamu Undangan
+                          </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+                  <div class="timeline-image" style="background-color:#F9062E">
+                      <h4>Pameran Aplikasi dan Gamification</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4 style="color:#F9062E"><br>09.00 - 12.00 WIB</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted" style="color:#fff">
+														Pameran Aplikasi oleh Developer UDINUS dan dimulainya Gamification dengan terlebih dahulu mendaftarkan diri ke HMTI Corner
+														untuk mendapatkan Software Fair Passport
+													</p>
                       </div>
                   </div>
               </li>
               <li>
+                  <div class="timeline-image" style="background-color:#F9062E">
+                      <h4><br>TALKSHOW</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4  style="color:#F9062E">13.00 - 14.00 WIB</h4>
+                          <h4 class="subheading">Masas Dani</h4>
+                      </div>
+                      <div class="timeline-body" style="margin-top:-50px">
+                          <p class="text-muted" style="color:#fff">
+														Talkshow ringan dengan narasumber yang telah berpengalaman dalam dunia
+													develop aplikasi. </p>
+                      </div>
+                  </div>
+              </li>
+              <li class="timeline-inverted">
+								<div class="timeline-image" style="background-color:#F9062E">
+                      <h4>DAY 2 Pameran & Gamification</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4  style="color:#F9062E">08.00 - 12.00 WIB</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted" style="color:#fff">
+														Pameran Aplikasi oleh Developer disertai dengan Gamification. Di hari kedua ini peserta Gamification
+														berkesempatan untuk menukarkan point yang telah dikumpulkan dengan merchandise Software Fair 2017.
+														</p>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
+                      </div>
+                  </div>
+              </li>
+              <li>
+<<<<<<< HEAD
                   <div class="timeline-image">
                       <h4>Talkshow</h4>
                   </div>
@@ -209,10 +270,25 @@
                       </div>
                       <div class="timeline-body">
                           <p class="text-muted">developer dan pengunjung dapat mengikut acara talkshow.</p>
+=======
+                  <div class="timeline-image"  style="background-color:#F9062E">
+                      <h4>Demo Aplikasi</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4  style="color:#F9062E">12.30 - 14.00 WIB</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted" style="color:#fff">
+                          	Sebanyak 5 aplikasi terpilih berdasarkan saldo yang dimiliki paling sedikit di masing-masing gallery.
+														Adapun juri-juri yang kemudian akan memilih 3 aplikasi terbaik dan berhak mendapatkan reward.
+                          </p>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
                       </div>
                   </div>
               </li>
               <li class="timeline-inverted">
+<<<<<<< HEAD
                   <div class="timeline-image">
 										<h4><br>Pameran Aplikasi</h4>
 								</div>
@@ -224,6 +300,21 @@
 										<div class="timeline-body">
 												<p class="text-muted">Pameran Aplikasi ini developer mempresentasikan hasil karya mereka. Selama pameran aplikasi berlangsung, didalam acara ini juga terdapat gamification (game untuk para pengunjung)</p>
 								</div>
+=======
+                  <div class="timeline-image" style="background-color:#F9062E">
+                      <h4>Awarding & Closing</h4>
+                  </div>
+                  <div class="timeline-panel">
+                      <div class="timeline-heading">
+                          <h4  style="color:#F9062E">14.30 - 15.00 WIB</h4>
+                      </div>
+                      <div class="timeline-body">
+                          <p class="text-muted" style=color:#fff>
+                          	Pengumuman aplikasi terbaik I, II dan III. Lalu diakhiri dengan Closing Ceremony.
+                          </p>
+                      </div>
+                  </div>
+>>>>>>> 6a0d9258b81be9e56f79e0fd5576697607f9e743
               </li>
 
 							<li>
@@ -257,11 +348,10 @@
 				</div>
 			</div>
 			<div class="col-md-12 col-sm-12 contact-info text-center">
-
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.</p>
+				<p>Untuk informasi mengenai event Software Fair 2017, dapat visit ke camp HMTI UDINUS gedung D lt 1. Atau melalui contact persons dibawah ini.</p>
 				<div class="col-md-6 col-sm-4">
 					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
-					<p>hello@company.com</p>
+					<p>hmti.dinus@gmail.com</p>
 				</div>
 				<div class="col-md-6 col-sm-4">
 					<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>

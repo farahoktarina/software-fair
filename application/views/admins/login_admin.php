@@ -46,7 +46,7 @@
                         <?php echo $this->session->flashdata('konfirmasi')?>
                     </p>
 
-                        <form role="form" method="post" action="<?php echo site_url('administrator/login_adm');?>">
+                        <form role="form" method="post" action="<?php echo site_url('Administrator/login_adm');?>">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Email" name="email_adm" autofocus>

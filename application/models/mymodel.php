@@ -42,4 +42,9 @@ public function update($table,$data,$where)
 		$res = $data->row();
 		return $res->saldo;
 	}
+	public function getVotting($where){
+		$data = $this->db->query('select * from developer'.' '.$where);
+		$res = $data->row();
+		return $res->voting;
+	}
 }
